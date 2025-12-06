@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables & API Keys
+.gemini_key
+.env
+
+# Generated Files (Runtime)
+exploit.py
+analysis.txt
+log_error.txt
+
+# Binary Targets
+*.elf
+*.bin
+*.out
+
+# System
+.DS_Store
