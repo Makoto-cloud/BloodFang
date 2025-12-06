@@ -52,7 +52,7 @@ Includes a threaded supervisor (`executor.py`) that monitors remote connections.
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/USERNAME/BloodFang.git](https://github.com/USERNAME/BloodFang.git)
+    git clone https://github.com/Makoto-cloud/BloodFang.git
     cd BloodFang
     ```
 
