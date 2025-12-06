@@ -7,6 +7,8 @@
 
 > **The Autonomous AI-Powered Binary Exploitation Engine.**
 
+![Tampilan BloodFang](BloodFang.png)
+
 **BloodFang** is a next-generation CTF and Exploit Development framework. It automates the entire offensive lifecycle—from deep binary analysis to vulnerability detection, payload generation, and autonomous self-healing execution.
 
 Powered by **Google Gemini 2.0 Flash**, BloodFang replaces manual trial-and-error with algorithmic precision, capable of constructing ROP chains, Ret2Libc attacks, and correcting stack alignment issues in real-time.
