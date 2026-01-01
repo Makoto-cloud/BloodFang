@@ -27,13 +27,13 @@ Automatic extraction of critical binary data using `checksec`, `readelf`, `ROPga
 ### 🧠 Generative Exploit Engine
 Uses a strictly context-aware AI prompt (`promp_1.txt`) to generate production-ready `pwntools` scripts. It automatically decides between:
 * **Ret2PLT**: If `system` is available in PLT.
-* **Ret2Libc**: Automatic leak chain generation (puts/printf) + Libc base calculation. [cite: 32].
+* **Ret2Libc**: Automatic leak chain generation (puts/printf) + Libc base calculation.
 * **Shellcode Injection**: If NX is disabled. 
 
 ### 🚑 Auto-Fixer (Self-Healing)
 If an exploit fails, BloodFang doesn't just stop. The **Fixer Module** (`fixer.py`) analyzes the crash log (`log_error.txt`) and applies logic gates:
 * **Gate 1 (Symbol Error):** Switches payload strategy (e.g., from Ret2PLT to Ret2Libc). [cite: 3]
-* **Gate 2 (Segfault/EOF):** Injects `RET` gadgets to fix Ubuntu/GLIBC stack alignment (MOVAPS issues). [cite: 8]
+* **Gate 2 (Segfault/EOF):** Injects `RET` gadgets to fix Ubuntu/GLIBC stack alignment (MOVAPS issues).
 * **Gate 3 (Desync):** Adjusts I/O interaction (recvuntil/clean). [cite: 11]
 
 ### 🛡️ Smart Execution Monitor
