@@ -27,7 +27,7 @@ Automatic extraction of critical binary data using `checksec`, `readelf`, `ROPga
 ### 🧠 Generative Exploit Engine
 Uses a strictly context-aware AI prompt (`promp_1.txt`) to generate production-ready `pwntools` scripts. It automatically decides between:
 * **Ret2PLT**: If `system` is available in PLT.
-* **Ret2Libc**: Automatic leak chain generation (puts/printf) + Libc base calculation. [cite: 32]
+* **Ret2Libc**: Automatic leak chain generation (puts/printf) + Libc base calculation. [cite: 32].
 * **Shellcode Injection**: If NX is disabled. 
 
 ### 🚑 Auto-Fixer (Self-Healing)
